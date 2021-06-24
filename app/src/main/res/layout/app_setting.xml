@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_setting_change_pass"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/text_view_setting_user"
+        android:text="Hello User"
+        android:fontFamily="@font/lemonada_bold"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="25dp"
+        >
+    </TextView>
+    <com.google.android.material.button.MaterialButton
+        app:icon="@drawable/ic_baseline_vpn_key_24"
+        android:layout_centerVertical="true"
+        android:layout_margin="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Change Password"
+        android:id="@+id/btn_setting_change_pass"
+        android:textSize="15dp"
+        style="@style/Widget.MaterialComponents.Button.TextButton">
+    </com.google.android.material.button.MaterialButton>
+    <TextView
+        android:layout_below="@+id/btn_setting_change_pass"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Version 1.0">
+    </TextView>
+
+
+</RelativeLayout>

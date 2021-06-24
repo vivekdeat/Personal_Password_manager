@@ -1,0 +1,2 @@
+rootProject.name = "Password Manager (1)"
+include ':app'

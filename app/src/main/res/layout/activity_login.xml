@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".login">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/login_LL"
+        android:src="@drawable/lock_f"
+        android:layout_centerHorizontal="true">
+    </ImageView>
+
+    <LinearLayout
+        android:id="@+id/login_LL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/greenshape"
+        android:orientation="vertical"
+        android:weightSum="5">
+        <TextView
+            android:layout_margin="5sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_view_name"
+            android:text="Hii, User name"
+            android:fontFamily="@font/lemonada_bold"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:layout_weight="1">
+        </TextView>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_margin="5sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Password">
+            <com.google.android.material.textfield.TextInputEditText
+                android:inputType="textPassword"
+                android:id="@+id/login_pass"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+        <TextView
+            android:layout_margin="5sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_view_forget"
+            android:text="Forget Password"
+            android:textColor="#FF0000"
+            android:textSize="20sp"
+            android:layout_weight="1">
+        </TextView>
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:layout_gravity="center">
+        </Button>
+        <Button
+            android:id="@+id/btn_login_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:layout_gravity="center">
+        </Button>
+    </LinearLayout>
+
+</RelativeLayout>

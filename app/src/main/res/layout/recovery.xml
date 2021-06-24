@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView
+        android:id="@+id/recovery_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_centerHorizontal="true"
+        android:hint="Plaease select one of the option from the given menu"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:textStyle="bold">
+    </TextView>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/recover_textinput"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/recovery_textview"
+        app:startIconDrawable="@drawable/ic_baseline_arrow_circle_down_24"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        android:hint="Select an Option">
+        <AutoCompleteTextView
+            android:id="@+id/recovery_dropdown"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </AutoCompleteTextView>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/recover_Editinput"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/recover_textinput"
+        app:startIconDrawable="@drawable/ic_baseline_text_fields_24"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:hint="Answer">
+        <EditText
+            android:id="@+id/Edittext_recovery"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </EditText>
+    </com.google.android.material.textfield.TextInputLayout>
+    <TextView
+        android:id="@+id/showpass"
+        android:layout_below="@id/recover_Editinput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:textSize="15sp"
+        android:textStyle="bold">
+    </TextView>
+
+    <Button
+        android:id="@+id/btn_show_pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/showpass"
+        android:text="show Password">
+    </Button>
+
+    <Button
+        android:id="@+id/btn_show_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/btn_show_pass"
+        android:text="Cancel">
+    </Button>
+
+
+
+</RelativeLayout>
